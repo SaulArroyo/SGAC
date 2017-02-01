@@ -8,7 +8,7 @@ $tipo_consulta = $_POST['tipo_consulta'];
 
  
 switch($tipo_consulta){
-    case "detalles_actividad":{
+    case "detalles_actividad":{//
         $objControlActividad = new cls_Ctrl_Actividad();
         $actividad = $_POST['actividad'];
         $objResult = $objControlActividad->mtdObtenerActividadPorId($actividad);
